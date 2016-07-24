@@ -16,9 +16,9 @@ class GRANDPAGETSHISGROOVE_API IDanceInterface
 
 public:
 
-	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "Can I Dance"), Category = "Dancing")
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, meta = (DisplayName = "Can I Dance"), Category = "Dancing")
 	bool CanDance();
 
-	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "Make Me Dance"), Category = "Dancing")
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, meta = (DisplayName = "Make Me Dance"), Category = "Dancing")
 	bool Dance(AActor* DanceInstigator);
 };
